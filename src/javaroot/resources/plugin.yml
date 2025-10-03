@@ -1,0 +1,17 @@
+name: ModerWork
+version: ${project.version}
+main: ru.javaroot.moderplugin.ModerPlugin
+api-version: 1.21
+author: JavaRoot
+commands:
+  moder:
+    description: Команда для включения/выключения режима модератора
+    usage: /moder <on|off>
+    permission: moderplugin.moder
+permissions:
+  moderplugin.moder:
+    description: Позволяет использовать команду /moder
+    default: op
+  moderplugin.alert:
+    description: Позволяет получать уведомления о начале/окончании модерации
+    default: op

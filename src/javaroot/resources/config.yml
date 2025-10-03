@@ -1,0 +1,28 @@
+# Конфигурация плагина ModerWork
+# Создатель: JavaRoot
+# Дискорд: javarootov
+# Телеграм: @javaroot
+
+moder-mode:
+ commands-on-enable:
+    - "lp user %player% permission set minecraft.command.gamemode.spectator true"
+    - "lp user %player% permission set minecraft.command.gamemode.survival true"
+  
+commands-on-disable:
+    - "lp user %player% permission unset minecraft.command.gamemode.spectator true"
+    - "lp user %player% permission unset minecraft.command.gamemode.survival true"
+  
+items:
+    stick:
+      name: "&7Палочка-АКБ"
+      enchantments:
+        - "KNOCKBACK:5"
+    
+    lightning:
+      name: "&7Зевс"
+    
+    # Защищенные слоты (индексы слотов в инвентаре игрока)
+    # 0 - первый слот (палочка), 2 - третий слот (громоотвод)
+    undroppable-slots:
+      - 2
+      - 5
